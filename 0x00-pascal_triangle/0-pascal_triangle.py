@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-0-pascal_triangle
+0: Pascal's Triangle
 """
+
 
 def pascal_triangle(n):
     """
@@ -17,5 +18,4 @@ def pascal_triangle(n):
             row.append(result[i-1][j-1] + result[i-1][j])
         row.append(1)
         result.append(row)
-
     return result
